@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des thèmes</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container container-wide">
+        <div class="topbar">
+            <div>
+                <span class="badge">Catalogue</span>
+                <h2>Gestion des thèmes</h2>
+            </div>
+            <div class="actions-inline">
+                <a class="btn-link" th:href="@{/}">Accueil</a>
+                <a class="btn-link" th:href="@{/sessions/nouvelle}">Nouvelle session</a>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form th:action="@{/themes/ajouter}" th:object="${themeForm}" method="post">
+                <div class="form-group">
+                    <label>Thème :</label>
+                    <input type="text" th:field="*{theme}" placeholder="Ex : Réseaux & Cybersécurité" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Mots-clés :</label>
+                    <input type="text" th:field="*{motsCles}" placeholder="Ex : Linux, TCP/IP, Sécurité" />
+                </div>
+
+                <button type="submit" class="btn-submit">Enregistrer le thème</button>
+            </form>
+        </div>
+
+        <h3>Liste des thèmes</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Thème</th>
+                        <th>Mots-clés</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="t : ${themes}">
+                        <td th:text="${t.id}"></td>
+                        <td th:text="${t.theme}"></td>
+                        <td th:text="${t.motsCles}"></td>
+                        <td>
+                            <a class="danger-link"
+                               th:href="@{/themes/supprimer/{id}(id=${t.id})}"
+                               onclick="return confirm('Supprimer ce thème ?');">
+                                Supprimer
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

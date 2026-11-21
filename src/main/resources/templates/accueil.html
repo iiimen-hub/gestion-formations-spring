@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Application de gestion des formations</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container">
+        <div class="app-header">
+            <span class="badge">Espace Formations</span>
+            <h1>APPLICATION DE GESTION DES FORMATIONS</h1>
+        </div>
+
+        <hr>
+
+        <h2>Accueil</h2>
+
+        <div class="nav-grid">
+            <a th:href="@{/recherche}"><button type="button">Rechercher une formation</button></a>
+            <a th:href="@{/apprenants}"><button type="button">Gestion des apprenants</button></a>
+            <a th:href="@{/themes}"><button type="button">Gestion des thèmes</button></a>
+            <a th:href="@{/sessions}"><button type="button">Gestion des sessions</button></a>
+            <a th:href="@{/inscriptions}"><button type="button">Inscriptions</button></a>
+        </div>
+    </div>
+</body>
+</html>

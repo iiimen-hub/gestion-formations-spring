@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des apprenants</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container container-wide">
+        <div class="topbar">
+            <div>
+                <span class="badge">Participants</span>
+                <h2>Gestion des apprenants</h2>
+            </div>
+            <div class="actions-inline">
+                <a class="btn-link" th:href="@{/}">Accueil</a>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form th:action="@{/apprenants/ajouter}" th:object="${apprenantForm}" method="post">
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label>CIN :</label>
+                        <input type="text" th:field="*{cin}" required />
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Numéro apprenant :</label>
+                        <input type="text" th:field="*{numero}" required />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Nom :</label>
+                        <input type="text" th:field="*{nom}" required />
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Prénom :</label>
+                        <input type="text" th:field="*{prenom}" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email :</label>
+                    <input type="email" th:field="*{email}" required />
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Date de naissance :</label>
+                        <input type="date" th:field="*{dateNaissance}" />
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Date première inscription :</label>
+                        <input type="date" th:field="*{datePremiereInscription}" />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Ajouter l'apprenant</button>
+            </form>
+        </div>
+
+        <h3>Liste des apprenants</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Numéro</th>
+                        <th>CIN</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="a : ${apprenants}">
+                        <td th:text="${a.numero}"></td>
+                        <td th:text="${a.cin}"></td>
+                        <td th:text="${a.nom}"></td>
+                        <td th:text="${a.prenom}"></td>
+                        <td th:text="${a.email}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouvelle session</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container container-wide">
+        <div class="topbar">
+            <div>
+                <span class="badge">Planification</span>
+                <h2>Nouvelle session de formation</h2>
+            </div>
+            <div class="actions-inline">
+                <a class="btn-link" th:href="@{/}">Accueil</a>
+                <a class="btn-link" th:href="@{/sessions}">Liste des sessions</a>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form th:action="@{/sessions/enregistrer}" th:object="${sessionForm}" method="post">
+                <div class="form-group">
+                    <label>Description :</label>
+                    <input type="text" th:field="*{description}" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Thème :</label>
+                    <select th:field="*{themeFormation}" required>
+                        <option value="" disabled selected>-- Choisir un thème --</option>
+                        <option th:each="t : ${themes}"
+                                th:value="${t.id}"
+                                th:text="${t.theme}">
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label>Date début :</label>
+                        <input type="date" th:field="*{datedebut}" required />
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label>Date fin :</label>
+                        <input type="date" th:field="*{datefin}" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enregistrer la session</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

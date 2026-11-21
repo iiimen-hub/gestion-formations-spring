@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des inscriptions</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container container-wide">
+        <div class="topbar">
+            <div>
+                <span class="badge">Suivi</span>
+                <h2>Gestion des inscriptions</h2>
+            </div>
+            <div class="actions-inline">
+                <a class="btn-link" th:href="@{/}">Accueil</a>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form th:action="@{/inscriptions/ajouter}" th:object="${inscriptionForm}" method="post">
+                <div class="form-group">
+                    <label>Apprenant :</label>
+                    <select th:field="*{apprenant}" required>
+                        <option value="" disabled selected>-- Choisir un apprenant --</option>
+                        <option th:each="a : ${apprenants}"
+                                th:value="${a.id}"
+                                th:text="${a.numero + ' - ' + a.nom + ' ' + a.prenom}">
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Session de formation :</label>
+                    <select th:field="*{sessionFormation}" required>
+                        <option value="" disabled selected>-- Choisir une session --</option>
+                        <option th:each="s : ${sessions}"
+                                th:value="${s.id}"
+                                th:text="${s.description + (s.themeFormation != null ? ' (' + s.themeFormation.theme + ')' : '')}">
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Date d'inscription :</label>
+                    <input type="date" th:field="*{dateInscription}" required />
+                </div>
+
+                <button type="submit" class="btn-submit">Enregistrer l'inscription</button>
+            </form>
+        </div>
+
+        <h3>Liste des inscriptions</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Apprenant</th>
+                        <th>Session</th>
+                        <th>Date d'inscription</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="ins : ${inscriptions}">
+                        <td th:text="${ins.id}"></td>
+                        <td th:text="${ins.apprenant != null ? ins.apprenant.nom + ' ' + ins.apprenant.prenom : ''}"></td>
+                        <td th:text="${ins.sessionFormation != null ? ins.sessionFormation.description : ''}"></td>
+                        <td th:text="${ins.dateInscription != null ? #dates.format(ins.dateInscription, 'dd/MM/yyyy') : ''}"></td>
+                        <td>
+                            <a class="danger-link"
+                               th:href="@{/inscriptions/supprimer/{id}(id=${ins.id})}"
+                               onclick="return confirm('Supprimer cette inscription ?');">
+                                Supprimer
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

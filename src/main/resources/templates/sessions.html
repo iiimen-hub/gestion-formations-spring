@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des sessions</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="container container-wide">
+        <div class="topbar">
+            <div>
+                <span class="badge">Planification</span>
+                <h2>Gestion des sessions</h2>
+            </div>
+            <div class="actions-inline">
+                <a class="btn-link" th:href="@{/}">Accueil</a>
+                <a class="btn-link" th:href="@{/sessions/nouvelle}">Nouvelle session</a>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>Thème</th>
+                        <th>Date début</th>
+                        <th>Date fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="s : ${sessions}">
+                        <td th:text="${s.id}"></td>
+                        <td th:text="${s.description}"></td>
+                        <td th:text="${s.themeFormation != null ? s.themeFormation.theme : ''}"></td>
+                        <td th:text="${s.datedebut != null ? #dates.format(s.datedebut, 'dd/MM/yyyy') : ''}"></td>
+                        <td th:text="${s.datefin != null ? #dates.format(s.datefin, 'dd/MM/yyyy') : ''}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
