@@ -957,6 +957,7 @@
 /com/appcues
 /com/appdirect
 /com/appdynamics
+/com/appfig
 /com/appfiza
 /com/apphance
 /com/apphud
@@ -1777,6 +1778,7 @@
 /com/bluecats
 /com/bluecirclesoft
 /com/blueconic
+/com/bluedoseapp
 /com/bluefirereader
 /com/bluejeans
 /com/bluelinelabs
@@ -1989,6 +1991,7 @@
 /com/bugsplat
 /com/bugtags
 /com/bugvm
+/com/bugylabs
 /com/buildbound
 /com/buildkite
 /com/buildkt
@@ -3344,6 +3347,7 @@
 /com/df4j
 /com/dfaris
 /com/dgkncgty
+/com/dgmltn
 /com/dgtlrepublic
 /com/dgwave
 /com/dgxdks
@@ -3591,6 +3595,7 @@
 /com/dream-platform
 /com/dream11
 /com/dreamgyf
+/com/dreaminhex
 /com/dreams-summer
 /com/dregs
 /com/dreizak
@@ -3768,6 +3773,7 @@
 /com/edugility
 /com/eduskit
 /com/edusoho
+/com/edutecka
 /com/eduworks
 /com/edwardraff
 /com/edwardstock
@@ -4161,6 +4167,7 @@
 /com/exyte
 /com/exyui
 /com/eyeem
+/com/eyegil
 /com/eyeofcloud
 /com/eygraber
 /com/eyougo
@@ -4862,6 +4869,7 @@
 /com/getsentry
 /com/getshoutout
 /com/getstoryteller
+/com/getstrada
 /com/gettugboat
 /com/gettyimages
 /com/gettyio
@@ -4959,6 +4967,7 @@
 /com/gluehome
 /com/gluonhq
 /com/glureau
+/com/glyphway
 /com/gmail
 /com/gmalvestiti
 /com/gmaslowski
@@ -5380,6 +5389,7 @@
 /com/heybcat
 /com/heydocther
 /com/heymis
+/com/heypointer
 /com/heystage
 /com/heytap
 /com/heywatch
@@ -5673,6 +5683,7 @@
 /com/idilia
 /com/idiotalex
 /com/idmelabs
+/com/idmission
 /com/idontchop
 /com/idpartner
 /com/idrsolutions
@@ -6156,6 +6167,7 @@
 /com/jackpocket
 /com/jackson42
 /com/jacobmountain
+/com/jacobshing
 /com/jacobtread
 /com/jacoby6000
 /com/jadaptive
@@ -6391,6 +6403,7 @@
 /com/jiechic
 /com/jiedangou
 /com/jifeline
+/com/jiggicons
 /com/jihuayu
 /com/jijiancode
 /com/jillesvangurp
@@ -6635,6 +6648,7 @@
 /com/juul
 /com/juvenxu
 /com/juxest
+/com/jvandort
 /com/jvj28
 /com/jvm123
 /com/jvmbytes
@@ -7064,6 +7078,7 @@
 /com/kushkipagos
 /com/kustomer
 /com/kutaybuyukkorukcu
+/com/kuzikode
 /com/kuzudb
 /com/kvaithin
 /com/kvc0
@@ -7236,6 +7251,7 @@
 /com/leinardi
 /com/leiniao
 /com/leisenfels
+/com/lekman
 /com/lemmabase
 /com/lemmingapex
 /com/lemonappdev
@@ -7308,6 +7324,7 @@
 /com/license4j
 /com/licensespring
 /com/licentivo
+/com/licers
 /com/licheedev
 /com/lichongbing
 /com/lidengju
@@ -7651,6 +7668,7 @@
 /com/lyon-o
 /com/lyonesgamer
 /com/lyra
+/com/lyrelog
 /com/lyrieek
 /com/lyubenblagoev
 /com/lyxtera
@@ -8373,6 +8391,7 @@
 /com/monchstudio
 /com/monday-consulting
 /com/monederobingo
+/com/monetizationos
 /com/monext
 /com/moneycollect
 /com/moneykit
@@ -8869,6 +8888,7 @@
 /com/ninja-beans
 /com/ninja-squad
 /com/ninjamodding
+/com/niohive
 /com/nirima
 /com/nirmata
 /com/nis2shield
@@ -9734,6 +9754,7 @@
 /com/piniacloud
 /com/pinterest
 /com/pipedream
+/com/pipelogiq
 /com/pipl
 /com/pippsford
 /com/piraiinfo
@@ -13119,6 +13140,7 @@
 /com/userpilot
 /com/uservoice
 /com/usesmileid
+/com/usesophi
 /com/usetada
 /com/usetraceforge
 /com/usewalletkit
@@ -13418,6 +13440,7 @@
 /com/vogle
 /com/vogosport
 /com/voicetel
+/com/voidhash
 /com/voinearadu
 /com/voiweb
 /com/vojajovanovic
@@ -14150,6 +14173,7 @@
 /com/yizlan
 /com/yjntc
 /com/ykkblog
+/com/yktsv
 /com/ymock
 /com/ymzjpt
 /com/yo1000
@@ -14568,6 +14592,7 @@
 /dataforge
 /datasift
 /date
+/dating
 /day
 /dbunit
 /de
@@ -14918,6 +14943,7 @@
 /io/arachn
 /io/arcblock
 /io/archimedesfw
+/io/archinaut
 /io/architect
 /io/archivesunleashed
 /io/arconia
@@ -15671,6 +15697,7 @@
 /io/getnelson
 /io/getquill
 /io/getstream
+/io/gettrusto
 /io/getunleash
 /io/getvouch
 /io/getzeal
@@ -16054,6 +16081,7 @@
 /io/kiota
 /io/kipe
 /io/kiponos
+/io/kirora
 /io/kiw
 /io/kjson
 /io/kleisli
@@ -16267,6 +16295,7 @@
 /io/mattmoore
 /io/mattroberts
 /io/mavsdk
+/io/max4j
 /io/maxthomas
 /io/mazenmc
 /io/mcarle
@@ -16975,6 +17004,7 @@
 /io/sixhours
 /io/skalogs
 /io/skelp
+/io/skipcheck
 /io/skippy
 /io/skodjob
 /io/skrastrek
@@ -17878,6 +17908,7 @@
 /net/benjaminguzman
 /net/benmur
 /net/benpl
+/net/bentrix
 /net/benwoodworth
 /net/bertag
 /net/bhardy
@@ -18543,6 +18574,7 @@
 /net/lariverosc
 /net/laroueverte
 /net/lastninja
+/net/lbku
 /net/lbruun
 /net/ldvsoft
 /net/leadware
@@ -19518,6 +19550,7 @@
 /org/angryscan
 /org/animatejsf
 /org/ankane
+/org/ankiquest
 /org/ankur2233
 /org/annolab
 /org/annotationpro
@@ -20843,6 +20876,7 @@
 /org/gjgr
 /org/gjsoft
 /org/gkbrown
+/org/gkevin
 /org/glaer
 /org/glamey
 /org/glassfish
@@ -22367,6 +22401,7 @@
 /org/notima
 /org/notlocalhost
 /org/notninja
+/org/novasoftwarefoundation
 /org/novelfs
 /org/novgorodtsev
 /org/nqcx
@@ -22961,6 +22996,7 @@
 /org/raml
 /org/randombits
 /org/randomcat
+/org/randomcodemonkey
 /org/ranksys
 /org/rapidoid
 /org/rapidpm

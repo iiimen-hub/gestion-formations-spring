@@ -3,65 +3,65 @@
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot</artifactId>
   <versioning>
-    <lastUpdated>20261121040225</lastUpdated>
+    <lastUpdated>20261122014105</lastUpdated>
     <snapshot>
-      <timestamp>20261121.035753</timestamp>
-      <buildNumber>14</buildNumber>
+      <timestamp>20261122.013349</timestamp>
+      <buildNumber>17</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom.asc</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar.asc</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>javadoc</classifier>
         <extension>jar.asc</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>module.asc</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>module</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar.asc</extension>
-        <value>4.2.1-20261121.035753-14</value>
-        <updated>20261121035753</updated>
+        <value>4.2.1-20261122.013349-17</value>
+        <updated>20261122013349</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
